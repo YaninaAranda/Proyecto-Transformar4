@@ -1,0 +1,271 @@
+@charset "UTF-8";
+.seccionImportante .seccionImportante--video {
+  width: 90%;
+  margin-left: 11vh;
+  margin-top: 6.4vh; }
+
+.seccionImportante .seccionImportante--flechaAbajo {
+  width: 5%;
+  margin-top: 11vh;
+  margin-left: 100vh; }
+
+.seccionImportante .seccionImportante--párrafosGrandes {
+  color: #a44a3f;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 4.8vh 25vh 8vh 25vh;
+  line-height: 40px;
+  width: 100%;
+  margin-top: 9.6vh; }
+
+.footer {
+  padding-bottom: 3.2vh;
+  border-color: #ffff;
+  left: 0; }
+  .footer .footer__caja {
+    background-color: #d4e09b;
+    left: 0;
+    border-top: solid 5px;
+    border-color: #ffff; }
+  .footer .footer__caja--enlaces {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 1vh;
+    margin-bottom: 1vh; }
+  .footer .footer__caja--h1 {
+    font-family: "Bebas Neue", cursive;
+    color: #6f754f;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 6.4vh;
+    text-transform: uppercase; }
+  .footer .footer__caja--icono {
+    width: 90%;
+    align-content: center;
+    margin-top: 3.2vh;
+    margin-bottom: 3.2vh;
+    padding-right: 6.4vh;
+    padding-bottom: 3.2vh;
+    padding-left: 6.4vh; }
+    .footer .footer__caja--icono:hover {
+      transform: scale(1.4, 1.4); }
+  .footer .footer__h4 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    opacity: 70%;
+    padding-top: 3.2vh;
+    margin-left: 9.6vh; }
+
+.pastilleroPadre {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center; }
+  .pastilleroPadre .pastilleroPadre__pastilleros {
+    width: 20%;
+    padding-bottom: 3.2vh;
+    padding-left: 1.6vh;
+    background-color: #cbdfbd;
+    border-style: outset;
+    border-color: #d4e09b;
+    margin-left: 2vh; }
+  .pastilleroPadre .pastilleroPadre__pastilleros--h2 {
+    color: #a44a3f;
+    padding-top: 1.12vh;
+    padding-left: 1.6vh;
+    width: 100%;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1rem;
+    background-color: #ffff;
+    position: relative;
+    border-bottom: solid 1px #a44a3f;
+    margin-right: 10vh;
+    margin-top: 1vh; }
+  .pastilleroPadre .pastilleroPadre__pastilleros--p {
+    color: #a44a3f;
+    padding-top: 1.12vh;
+    padding-left: 1.6vh;
+    padding-right: 1.6vh;
+    padding-bottom: 1.6vh;
+    overflow: auto;
+    font-size: 0.8rem; }
+  .pastilleroPadre .pastilleroPadre__pastilleros__p--mas {
+    color: #a44a3f; }
+    .pastilleroPadre .pastilleroPadre__pastilleros__p--mas:hover {
+      color: #f19c79; }
+
+.cajaContenedora {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.2fr 1fr;
+  grid-template-areas: "párrafosGrandes2 párrafosGrandes2" "vacio4 vacio4" "cajasObjetivos1 cajasObjetivos2";
+  grid-row-gap: 40px;
+  grid-column-gap: 5px;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 10px 10px 10px;
+  padding: 3.2vh 3.2vh 11vh;
+  margin-top: 6.4vh;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0vh; }
+  .cajaContenedora .cajaContenedora--párrafosGrandes2 {
+    grid-area: párrafosGrandes2;
+    color: #a44a3f;
+    font-size: 1rem;
+    text-align: center;
+    padding: 4vh 6vh 6vh;
+    line-height: 40px;
+    width: 90%;
+    margin-top: 9.6vh;
+    background-color: #ffffffcc;
+    justify-self: center;
+    border-radius: 10px 10px 10px 10px; }
+  .cajaContenedora .cajaContenedora--vacio4 {
+    grid-area: vacio4;
+    width: 100%;
+    height: 6vh;
+    margin-top: 5vh; }
+  .cajaContenedora .cajaContenedora__cajasObjetivos1, .cajaContenedora .cajaContenedora__cajasObjetivos2 {
+    grid-area: cajasObjetivos1;
+    width: 90%;
+    border: solid 1px #a44a3f;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    justify-self: center;
+    margin-bottom: 2vh; }
+    .cajaContenedora .cajaContenedora__cajasObjetivos1 .cajaContenedora__cajasObjetivos1--h3, .cajaContenedora .cajaContenedora__cajasObjetivos2 .cajaContenedora__cajasObjetivos1--h3, .cajaContenedora .cajaContenedora__cajasObjetivos2 .cajaContenedora__cajasObjetivos2--h3 {
+      font-size: 1.5rem;
+      color: #a44a3f;
+      padding: 4.8vh 3vh;
+      margin-left: 6.4vh; }
+    .cajaContenedora .cajaContenedora__cajasObjetivos1 .cajaContenedora__cajasObjetivos1--objetivos, .cajaContenedora .cajaContenedora__cajasObjetivos2 .cajaContenedora__cajasObjetivos1--objetivos, .cajaContenedora .cajaContenedora__cajasObjetivos2 .cajaContenedora__cajasObjetivos2--objetivos {
+      color: #a44a3f;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      padding: 4.8vh 6.4vh;
+      list-style-position: outside;
+      list-style: square;
+      line-height: 20px;
+      width: 100%;
+      margin-bottom: 3.2vh;
+      margin-left: 3vh; }
+      .cajaContenedora .cajaContenedora__cajasObjetivos1 .cajaContenedora__cajasObjetivos1--objetivos .cajaContenedora__cajasObjetivos1__objetivos--adentro, .cajaContenedora .cajaContenedora__cajasObjetivos2 .cajaContenedora__cajasObjetivos1--objetivos .cajaContenedora__cajasObjetivos1__objetivos--adentro, .cajaContenedora .cajaContenedora__cajasObjetivos2 .cajaContenedora__cajasObjetivos2--objetivos .cajaContenedora__cajasObjetivos1__objetivos--adentro {
+        list-style-position: inside;
+        padding: 3.2vh 3.2vh 0vh;
+        list-style: upper-roman;
+        font-style: italic; }
+  .cajaContenedora .cajaContenedora__cajasObjetivos2 {
+    grid-area: cajasObjetivos2; }
+
+.bajadaProyecto {
+  grid-area: bajadaProyecto;
+  justify-self: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: #f19c79;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  line-height: 20px;
+  padding: 0vh 10vh 0vh 10vh; }
+
+.bajada {
+  margin: 0vh;
+  margin-bottom: 9.6vh;
+  color: #f19c79;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  line-height: 20px;
+  padding: 0vh 10vh 0vh 10vh; }
+
+.fraseContacto {
+  display: inline-block;
+  width: 40%;
+  margin: 14vh 0vh 6.4vh 40vh; }
+
+.animate__animated {
+  width: 20%;
+  animation-duration: 3s;
+  position: absolute;
+  margin-left: 60vh;
+  margin-top: 0vh; }
+
+.form {
+  width: 80%;
+  padding: 3.2vh;
+  position: relative;
+  padding-left: 44vh;
+  margin-left: 0vh; }
+  .form .form__field {
+    border: none;
+    position: relative; }
+    .form .form__field .form__field--legend {
+      position: absolute;
+      color: #6f754f;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5rem; }
+    .form .form__field .form__field--chicosRedondos {
+      width: 1.8%;
+      border-color: #a44a3f;
+      margin-left: 67vh;
+      position: absolute;
+      margin-top: 0.5vh; }
+    .form .form__field .form__field--p {
+      margin-left: 71vh; }
+  .form .form--etiqueta {
+    display: none; }
+  .form .form--input, .form .form__profesion {
+    border: solid 1px #6f754f;
+    background-color: #cbdfbd;
+    color: #6f754f;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 0.8rem;
+    padding-left: 3vh;
+    position: relative;
+    width: 32%; }
+  .form .form__profesion {
+    padding-left: 2vh; }
+  .form .form--comentario {
+    border: solid 1px #6f754f;
+    background-color: #cbdfbd;
+    color: #6f754f;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 0.8rem;
+    padding-left: 3vh;
+    position: relative;
+    width: 66%; }
+  .form .label {
+    display: inline-block;
+    color: #a44a3f;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem; }
+  .form .chicosCuadrados {
+    display: inline-block;
+    margin-top: 4.8vh;
+    margin-left: 11vh;
+    border: solid 1px #6f754f; }
+  .form .form__botonContenedor {
+    margin-left: 27vh;
+    margin-top: 8vh;
+    margin-bottom: 4.8vh; }
+    .form .form__botonContenedor .form__botonContenedor--boton {
+      border: none;
+      width: 15%;
+      font-weight: 600;
+      background-color: #f19c79;
+      color: #ffff;
+      border-radius: 10px 10px 10px 10px;
+      padding-bottom: 6vh; }
+      .form .form__botonContenedor .form__botonContenedor--boton:hover {
+        background-color: #d4e09b;
+        color: #f19c79; }

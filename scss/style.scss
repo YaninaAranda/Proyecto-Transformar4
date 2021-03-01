@@ -1,0 +1,363 @@
+$titulos:'Bebas Neue', cursive;
+$fuente: 'Montserrat', sans-serif;
+$fuentetres: 'Courier New', Courier, monospace;
+$coloruno:#a44a3f;
+$colordos:#f6f4d2;
+$colortres:#d4e09b;
+$colorcuatro:#6f754f;
+$colorcinco:#f19c79;
+$colorseis:#ffff;
+$colorsiete:#cbdfbd;
+$sizeuno:2rem;
+$sizedos:1rem;
+$sizetres:1.5rem;
+$sizecuatro:0.8rem;
+$sizecinco:1.2rem;
+$medidauno:3.2vh;
+$medidados:solid 5px;
+$medidatres:6.4vh;
+$medidacuatro:1vh;
+$medidaseis:11vh;
+$medidasiete:1.6vh;
+$medidaocho:1.12vh;
+$medidanueve:solid 1px;
+$medidadiez:4.8vh;
+$medidaonce:3vh;
+$left:0;
+$width:100%;
+$widthdos:90%;
+$widthtres:5%;
+$widthcuatro:20%;
+$centro:center;
+$sinpunto:none;
+$bordes:10px 10px 10px 10px;
+$bordesdos: solid 1px #6f754f;
+$linea:40px;
+$lineados:20px;
+$padding: 0vh 10vh 0vh 10vh;
+
+@mixin fuente-dos ($coloruno, $fuente, $sizedos){
+    color: $coloruno;
+    font-family: $fuente;
+    font-size: $sizedos;
+}
+
+@mixin fuente-tres ($colorcinco, $fuente, $sizetres, $centro, $width, $lineados, $padding) {
+    color: $colorcinco;
+    font-family: $fuente;
+    font-size: $sizecinco;
+    text-align: $centro;
+    width: $width;
+    line-height: $lineados;
+    padding: $padding;
+}
+
+@mixin contacto ($bordesdos, $colorsiete, $colorcuatro, $fuente, $bordes, $sizecuatro){
+    border: $bordesdos;
+    background-color: $colorsiete;
+    color: $colorcuatro;
+    font-family: $fuente;
+    border-radius: $bordes;
+    font-size: $sizecuatro;
+}
+
+@mixin pastilleros ($coloruno, $medidaocho, $medidasiete){
+    color:$coloruno;
+    padding-top:$medidaocho;
+    padding-left:$medidasiete;
+}
+
+.seccionImportante{
+    .seccionImportante--video{
+        width: $widthdos;
+        margin-left: $medidaseis;
+        margin-top: $medidatres;
+    }
+    .seccionImportante--flechaAbajo{
+        width: $widthtres;
+        margin-top: $medidaseis;
+        margin-left: 100vh;
+    }
+    .seccionImportante--párrafosGrandes{
+        color: $coloruno;
+        font-size: $sizetres;
+        text-align: $centro;
+        padding: 4.8vh 25vh 8vh 25vh;
+        line-height: $linea;
+        width: $width;
+        margin-top: 9.6vh;
+    }
+}
+
+.footer{
+    padding-bottom: $medidauno;
+    border-color: $colorseis;
+    left: $left;
+    .footer__caja{
+        background-color:$colortres;
+        left: $left;
+        border-top: $medidados;
+        border-color: $colorseis;
+    }
+    .footer__caja--enlaces{
+        list-style-type: $sinpunto;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: $centro;
+        padding-top: $medidacuatro;
+        margin-bottom: $medidacuatro;
+    }
+    .footer__caja--h1{
+        font-family: $titulos;
+        color: $colorcuatro;
+        font-size: $sizeuno;
+        text-align: $centro;
+        padding-top: $medidatres;
+        text-transform: uppercase;
+    } 
+    .footer__caja--icono{
+        width: $widthdos;
+        align-content: $centro;
+        margin-top: $medidauno;
+        margin-bottom: $medidauno;
+        padding-right: $medidatres;
+        padding-bottom: $medidauno;
+        padding-left: $medidatres;
+        &:hover{
+            transform: scale(1.4 ,1.4);
+        }
+    }
+    .footer__h4{
+        font-family: $fuentetres;
+        font-size: $sizedos;
+        opacity: 70%;
+        padding-top: $medidauno;
+        margin-left: 9.6vh;
+    }
+}
+
+.pastilleroPadre{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: $centro;
+    align-content: $centro;
+    .pastilleroPadre__pastilleros{
+        width: $widthcuatro;
+        padding-bottom: $medidauno;
+        padding-left: $medidasiete;
+        background-color: $colorsiete;
+        border-style: outset;
+        border-color: $colortres;
+        margin-left: 2vh;
+    }
+    .pastilleroPadre__pastilleros--h2{
+        @include pastilleros ($coloruno, $medidaocho, $medidasiete);
+        width: $width;
+        font-family: $titulos;
+        font-size: $sizedos;
+        background-color: $colorseis;
+        position: relative;
+        border-bottom: $medidanueve $coloruno;
+        margin-right: 10vh;
+        margin-top: $medidacuatro;
+        }
+    .pastilleroPadre__pastilleros--p{
+        @include pastilleros ($coloruno, $medidaocho, $medidasiete);
+        padding-right:$medidasiete;
+        padding-bottom:$medidasiete;
+        overflow: auto;
+        font-size: $sizecuatro;
+    }
+    .pastilleroPadre__pastilleros__p--mas{
+        color: $coloruno;
+        &:hover{
+            color: $colorcinco;
+        }
+    }
+}
+
+.cajaContenedora{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr;
+    grid-template-areas: 
+    "párrafosGrandes2 párrafosGrandes2"
+    "vacio4 vacio4"
+    "cajasObjetivos1 cajasObjetivos2";
+    grid-row-gap: $linea;
+    grid-column-gap: 5px;
+    background-repeat: repeat-y;
+    background-position: $centro;
+    background-size: cover;
+    border-radius: $bordes;
+    padding: $medidauno $medidauno 11vh;
+    margin-top: $medidatres;
+    justify-content: $centro;
+    width: $width;
+    margin-left: 0vh;
+    .cajaContenedora--párrafosGrandes2{
+        grid-area: párrafosGrandes2;
+        color: $coloruno;
+        font-size:$sizedos;
+        text-align: $centro;
+        padding: 4vh 6vh 6vh;
+        line-height: $linea;
+        width: $widthdos;
+        margin-top: 9.6vh;
+        background-color: #ffffffcc;
+        justify-self: $centro;
+        border-radius: $bordes;
+    }
+    .cajaContenedora--vacio4{
+        grid-area: vacio4;
+        width: $width;
+        height: 6vh;
+        margin-top: 5vh;
+    }
+    .cajaContenedora__cajasObjetivos1{
+        grid-area: cajasObjetivos1;
+        width: $widthdos;
+        border: $medidanueve $coloruno;
+        border-radius: $bordes;
+        background-color: rgba(255, 255, 255, 0.842);
+        justify-self: $centro;
+        margin-bottom: 2vh;
+        .cajaContenedora__cajasObjetivos1--h3{
+            font-size: $sizetres;
+            color:$coloruno;
+            padding: $medidadiez $medidaonce ;
+            margin-left: $medidatres;
+        }
+        .cajaContenedora__cajasObjetivos1--objetivos{
+            @include fuente-dos ($coloruno, $fuente, $sizedos);
+            padding: $medidadiez $medidatres;
+            list-style-position:outside;
+            list-style: square;
+            line-height: $lineados;
+            width: $width;
+            margin-bottom: $medidauno;
+            margin-left: $medidaonce;
+            .cajaContenedora__cajasObjetivos1__objetivos--adentro{
+                list-style-position: inside;
+                padding: $medidauno $medidauno 0vh;
+                list-style:upper-roman;
+                font-style: italic;
+            }
+        }
+    }
+    .cajaContenedora__cajasObjetivos2{
+        grid-area: cajasObjetivos2;
+        @extend .cajaContenedora__cajasObjetivos1;
+        .cajaContenedora__cajasObjetivos2--h3{
+            @extend .cajaContenedora__cajasObjetivos1--h3;
+        }
+        .cajaContenedora__cajasObjetivos2--objetivos{
+            @extend .cajaContenedora__cajasObjetivos1--objetivos;
+        }
+    }
+}
+
+.bajadaProyecto{
+    grid-area: bajadaProyecto;
+    justify-self: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    @include fuente-tres ($colorcinco, $fuente, $sizecinco, $centro, $width, $lineados, $padding); 
+}
+
+.bajada{
+    margin: 0vh;
+    margin-bottom: 9.6vh;
+    @include fuente-tres ($colorcinco, $fuente, $sizecinco, $centro, $width, $lineados, $padding);
+}
+
+.fraseContacto{
+    display: inline-block;
+    width: 40%;
+    margin: 14vh 0vh 6.4vh 40vh;
+}
+.animate__animated{
+    width: $widthcuatro;
+    animation-duration:3s;
+    position: absolute;
+    margin-left: 60vh;
+    margin-top: 0vh;
+}
+.form{
+    width: 80%;
+    padding: $medidauno;
+    position: relative;
+    padding-left: 44vh;
+    margin-left: 0vh;
+    .form__field{
+        border: none;
+        position: relative;
+        .form__field--legend{
+            position: absolute;
+            color: $colorcuatro;
+            font-family: $fuente;
+            font-size: $sizetres;
+        }
+        .form__field--chicosRedondos{
+            width: 1.8%;
+            border-color: $coloruno;
+            margin-left: 67vh;
+            position: absolute;
+            margin-top: 0.5vh;
+        }
+        .form__field--p{
+            margin-left: 71vh;
+        }
+    }
+
+    .form--etiqueta{
+        display: none;
+    }
+    .form--input{
+        @include contacto ($bordesdos, $colorsiete, $colorcuatro, $fuente, $bordes, $sizecuatro);
+        padding-left: $medidaonce;
+        position: relative;
+        width: 32%;
+    }
+    .form__profesion{
+        @extend .form--input;
+        padding-left: 2vh;
+    }
+    .form--comentario{
+        @include contacto ($bordesdos, $colorsiete, $colorcuatro, $fuente, $bordes, $sizecuatro);
+        padding-left: $medidaonce;
+        position: relative;
+        width: 66%;
+    }
+
+    .label{
+        display: inline-block;
+        @include fuente-dos ($coloruno, $fuente, $sizedos)
+    }
+    .chicosCuadrados{
+        display: inline-block;
+        margin-top: $medidadiez;
+        margin-left: $medidaseis;
+        border: $bordesdos;
+        }
+
+    .form__botonContenedor{
+        margin-left: 27vh;
+        margin-top: 8vh;
+        margin-bottom: 4.8vh;
+        .form__botonContenedor--boton{
+            border: none;
+            width: 15%;
+            font-weight: 600;
+            background-color: $colorcinco;
+            color: $colorseis;
+            border-radius: $bordes;
+            padding-bottom:6vh;
+            &:hover{
+                background-color: $colortres;
+                color: $colorcinco;
+            }
+        } 
+    }    
+}             

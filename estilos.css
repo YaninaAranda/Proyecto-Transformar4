@@ -1,0 +1,882 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    width:60%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    margin-left:45vh
+}
+.párrafosGrandes{
+    color: #a44a3f;
+    font-size:1.5rem;
+    text-align: center;
+    padding: 4.8vh 25vh 8vh 25vh;
+    line-height: 40px;
+    width: 100%;
+    margin-top: 9.6vh;
+}
+.párrafos{
+    font-weight: lighter;
+    color: #f6f4d2;
+    padding: 1.6vh 0vh 1.6vh 0vh;
+    font-size: 1rem;
+}
+#navbarNav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.menu{
+    list-style:none;
+}
+body header nav ul li{
+    display: inline-block;
+    text-align: center;
+    background-image: url(imagenes_css/imagen_nav.jpg);
+    background-repeat: no-repeat;
+    border-left: solid 1px #ffff;
+    border-right: solid 1px #ffff;
+    padding:0vh 10vh 2vh 10vh;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 95%;
+    opacity: 90%;
+
+}
+body header nav #navbarNav ul li a{
+    color:#ffff;
+    font-size:1.4rem;
+    font-weight:normal;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    display: block;
+    text-align: center;
+}
+body header nav #navbarNav ul li a:hover{
+    color:#d4e09b;
+}
+
+footer{
+    padding-bottom:3.2vh;
+    border-top: 2px;
+    border-color:#ffff;
+    left: 0;
+}
+.caja{
+    background-color: #d4e09b;
+
+    width: 100%;
+    border-top: solid 5px #ffff;
+    left: 0;
+}
+footer .caja h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #6f754f;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    padding-top: 6.4vh;
+}
+footer ul{
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 1vh;
+    margin-bottom: 1vh;
+}
+strong{
+    font-style: italic;
+    font-weight: normal;
+}
+.icono{
+    width: 90%;
+    padding: 0vh 6.4vh 3.2vh 6.4vh;
+    margin-top: 3.2vh;
+    margin-bottom: 3.2vh;
+    align-content: center;
+}
+.icono:hover{
+    transform: scale(1.4 ,1.4);
+}
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    opacity: 70%;
+    padding-top: 3.2vh;
+    margin-left: 9.6vh;
+}
+.bajada{
+    text-align: center;
+    color: #f19c79;
+    margin: 0vh 6.4vh 9.6vh 32vh;
+    width: 70%;
+}
+.imagenTitulo{
+    position: relative;
+    width: 30%;
+    margin: 10vh 0vh 3.2vh 76vh;
+    z-index: 1;
+}
+
+
+
+
+.video{
+    width: 60%;
+    margin-left: 45vh;
+    margin-top: 8vh;
+    border: solid 10px #ffff;
+}
+.flechaAbajo{
+    margin-left: 100vh;
+    margin-top: 8vh;
+    width: 5%;
+}
+.imagenesDeslizables{
+    background-color:#f19c79;
+    color:#ffff;
+    padding: 9.6vh 3vh 9.6vh 3vh;
+    width: 80%;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 20vh;
+    position: relative;
+} 
+.imagenesPrincipales{
+    width: 50%;
+    margin-left: 20vh;
+    border-radius: 10px 10px 10px 10px;
+}
+.titulosDeslizables{
+    width: 40%;
+    position: absolute;
+    color: #a44a3f;
+    padding: 3.2vh 0vh 3.2vh 0vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size:1.5rem;
+    margin-top: 3.2vh;
+    margin-left: 82vh;
+    text-align: left;
+}
+.párrafoDeslizable{
+    font-weight:300;
+    color: #f6f4d2;
+    padding: 1.6vh 0vh 1.6vh 0vh;
+    width: 30%;
+    margin-left: 82vh;
+    margin-top: 10vh;
+    text-align: left;
+    font-size: 0.8rem;
+    width: 35%;
+}
+.carousel-indicators{
+    position: absolute;
+    top: 53vh;
+}
+.mas{
+    color: #a44a3f;
+    text-decoration: none;
+    font-weight: 500;
+}
+.mas:hover{
+    color: #6f754f;
+}
+
+
+
+.cajaContenedora{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.2fr 1fr;
+    grid-template-areas: 
+    "párrafosGrandes2 párrafosGrandes2"
+    "vacio4 vacio4"
+    "cajasObjetivos1 cajasObjetivos2";
+    grid-row-gap: 40px;
+    grid-column-gap: 5px;
+    background-image: url(imagenes_web/fondo.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 10px 10px;
+    padding: 3.2vh 3.2vh 11vh 3.2vh;
+    margin: 6.4vh 0vh 0vh 5vh;
+    justify-content: center;
+    width: 95%;
+
+}   
+.párrafosGrandes2{
+    grid-area: párrafosGrandes2;
+    color: #a44a3f;
+    font-size:1.2rem;
+    text-align: center;
+    padding: 4vh 6vh 6vh 6vh;
+    line-height: 40px;
+    width: 80%;
+    margin-top: 9.6vh;
+    background-color: #ffffffcc;
+    justify-self: center;
+    border-radius: 10px 10px 10px 10px;
+} 
+.vacio4{
+    grid-area: vacio4;
+    background-image: url(imagenes_css/2.png);
+    background-repeat: space;
+    height: 6vh;
+    margin-top: 5vh;
+    width: 100%;
+}    
+.cajasObjetivos1{
+    grid-area: cajasObjetivos1;
+    width: 90%;
+    border: solid 2px #a44a3f;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    justify-self: center;
+} 
+.cajasObjetivos2{
+    grid-area: cajasObjetivos2;
+    width: 90%;
+    border: solid 2px #a44a3f;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    justify-self: center;
+}                                 
+body h3{
+    font-size: 1.2rem;
+    color:#a44a3f;
+    padding: 4.8vh 16vh 3.2vh 6.4vh;
+    margin: 0vh 6.4vh 0vh 6.4vh;
+}
+.objetivos{
+    padding: 4.8vh 6.4vh 4.8vh 6.4vh;
+    color:#a44a3f;
+    list-style-position:outside;
+    list-style: square;
+    line-height: 20px;
+    width: 450px;
+    margin: 0vh 0vh 3.2vh 6.4vh;
+    font-size: 1rem;
+}
+.adentro{
+    list-style-position: inside;
+    padding: 3.2vh 3.2vh 0vh 3.2vh;
+    list-style:upper-roman;
+    font-style: italic;
+}
+
+
+
+.contenedorGrilla{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.2fr 0.2fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "imagenProyecto imagenProyecto imagenProyecto imagenProyecto"
+    "bajadaProyecto bajadaProyecto bajadaProyecto bajadaProyecto" 
+    "vacio2 vacio2 vacio2 vacio2"  
+    "vacio productos usos residuos"
+    "imagenTabla1 producto1 listas1 residuos1"
+    "imagenTabla2 producto2 listas2 residuos2"
+    "imagenTabla3 producto3 listas3 residuos3"
+    "vacio3 vacio3 vacio3 vacio3" ;
+    justify-content: center;
+    padding: 8vh;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    width: 100%;
+}
+.imagenProyecto{
+    grid-area: imagenProyecto;
+    z-index: 1;
+    width: 30%;
+    justify-self: center;
+    margin-top: 3vh;
+}
+.bajadaProyecto{
+    grid-area: bajadaProyecto;
+    text-align: center;
+    color: #f19c79;
+    margin: 3vh 0vh 10vh 0vh;
+    line-height: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+.vacio2{
+    grid-area: vacio2;
+    background-image: url(imagenes_css/lista.png);
+    height: 5vh;
+    background-repeat: space;
+    width: 100%;
+}
+.vacio:hover{
+    transform: translateX(40px);
+}
+.vacio{
+    grid-area: vacio;
+    background-image: url(imagenes_css/lista.png);
+    background-repeat: space;
+    background-size: 5%;
+    align-self: center;
+    height: 5vh;
+}
+.productos{
+    grid-area: productos;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #ffff;
+    justify-self: center;
+    align-self: center;
+    background-color: #f19c79;
+    padding: 1vh 10vh 0vh 10vh;
+    letter-spacing: 1px;
+    border-radius: 10px 10px 10px 10px;
+}
+.usos{
+    grid-area: usos;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #ffff;
+    justify-self: center;
+    align-self: center;
+    background-color: #f19c79;
+    padding: 1vh 12vh 0vh 12vh;
+    letter-spacing: 1px;
+    border-radius: 10px 10px 10px 10px;
+}
+.residuos{
+    grid-area: residuos;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #ffff;
+    justify-self: center;
+    align-self: center;
+    background-color: #f19c79;
+    padding: 1vh 11vh 0vh 11vh;
+    letter-spacing: 1px;
+    border-radius: 10px 10px 10px 10px;
+}
+.contenedorGrilla ol{
+    list-style-image: url(imagenes_css/lista.png);
+    padding: 5vh 0vh 10vh 7vh;
+    position: relative;    
+}
+.imagenTabla1{
+    grid-area: imagenTabla1;
+    justify-self: end;
+    align-self: center;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+}
+.imagenTabla1:hover{
+    transform: scale(1.4 ,1.4);
+}
+.imagenTabla2{
+    grid-area: imagenTabla2;
+    justify-self: end;
+    align-self: center;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+}
+.imagenTabla2:hover{
+    transform: scale(1.4 ,1.4);
+}
+.imagenTabla3{
+    grid-area: imagenTabla3;
+    justify-self: end;
+    align-self: center;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+}
+.imagenTabla3:hover{
+    transform: scale(1.4 ,1.4);
+}
+.producto1{
+    grid-area: producto1;
+    justify-self: center;
+    align-self: center;
+    background-color: #f19d79e0;
+    padding: 0vh 10vh 0vh 10vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+    padding-top: 10vh;
+    margin-top: 2vh;
+}
+.producto2{
+    grid-area: producto2;
+    justify-self: center;
+    align-self: center;
+    background-color: #f19d79ab;
+    padding: 0vh 10vh 0vh 10vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+    padding-top: 10vh;
+}
+.producto3{
+    grid-area: producto3;
+    justify-self: center;
+    align-self: center;
+    background-color: #f19d7960;
+    padding: 0vh 10vh 0vh 10vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+    padding-top: 10vh;
+}
+.listas1{
+    grid-area: listas1;
+    color: #a44a3f;
+    align-self: center;
+    background-color: #f19d79e0;
+    padding: 2vh 10vh 0vh 10vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+    margin-top: 2.5vh;
+}
+.listas2{
+    grid-area: listas2;
+    color: #a44a3f;
+    align-self: center;
+    background-color: #f19d79ab;
+    padding: 2vh 10vh 0vh 10vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+    margin-top: 1vh;
+}
+.listas3{
+    grid-area: listas3;
+    color: #a44a3f;
+    align-self: center;
+    background-color: #f19d7960;
+    padding: 2vh 10vh 0vh 10vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+    margin-top: 1vh;
+}
+.residuos1{
+    grid-area: residuos1;
+    justify-self: center;
+    align-self: center;
+    color: #a44a3f;
+    padding-left: 20px;
+    background-color: #f19d79e0;
+    padding: 6vh 10vh 0vh 10vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+    margin-top: 2.5vh;
+}
+.residuos2{
+    grid-area: residuos2;
+    justify-self: center;
+    align-self: center;
+    color: #a44a3f;
+    padding-left: 20px;
+    background-color: #f19d79ab;
+    padding: 6vh 10vh 0vh 10vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+    margin-top: 1vh;
+}
+.residuos3{
+    grid-area: residuos3;
+    justify-self: center;
+    align-self: center;
+    color: #a44a3f;
+    padding-left: 20px;
+    background-color: #f19d7960;
+    padding: 6vh 10vh 0vh 10vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 37vh;
+    margin-top: 1vh;
+}
+h6{
+    color: #a44a3f;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.vacio3{
+    grid-area: vacio3;
+    background-image: url(imagenes_css/lista.png);
+    height: 5vh;
+    background-repeat: space;
+    margin-top: 3vh;
+}
+
+
+
+h2{
+    width: 267px;
+    height: 32px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    color: #a44a3f;
+    background-color: #ffff;
+    padding:1.12vh 0vh 1.6vh 1.6vh;
+    position: relative;
+    margin: 0vh 0vh 0.8vh 0vh;
+    border-bottom: solid 1px #a44b3fb0;
+}
+.imagenesDeslizables2{
+    width: 1000px;
+    height: 420px;
+    margin-left: 28.8vh;
+    margin-bottom: 4.8vh;
+    padding: 3.2vh 9.6vh 3.2vh 9.6vh;
+    color: #a44a3f;
+    position: relative;
+}
+.imagenesDeslizables2 .badge{
+    top: 5vh;
+    padding: 1vh;
+    position: relative;
+    letter-spacing: 0.5vh;
+    background-color: #f19c79;
+    text-transform:uppercase;
+    position: absolute;
+    right: 20vh;
+}
+.pastilleroPadre{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.pastilleros{
+    width: 283px;
+    height: 148px;
+    padding: 0vh 0vh 3.2vh 1.6vh;
+    background-color: #cbdfbd;
+    border-style: outset;
+    border-color: #d4e09b;
+    margin-left: 0.8vh;
+}
+section article p{
+    padding: 1.12vh 1.6vh 3.2vh 1.6vh;
+    height: 100px;
+    overflow: auto;
+    color:#a44a3f;
+    font-size: 12px;
+}
+
+
+
+.fraseContacto{
+    position: relative;
+    width: 40%;
+    margin: 14vh 0vh 6.4vh 60vh;
+}
+.form{
+    color:#a44a3f;
+    padding: 3.2vh 3.2vh 3.2vh 3.2vh;
+    line-height: 40px;
+    position: relative;
+    margin-left: 58vh;
+    width: 100%;
+}
+form label{
+    display: none;
+}
+form input{
+    border: solid 1px #6f754f;
+    background-color: #cbdfbdec;
+    color: #6f754f;
+    width: 250px;
+    height: 30px;
+    padding: 0vh 1.6vh;
+    position: relative;
+    margin-right: 1.6vh;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px 10px 10px 10px;
+}
+form fieldset{
+    border: none;
+    position: relative;
+    color: #6f754f;
+    margin-top: 3.2vh;
+    margin-bottom: 4.8vh;
+    font-family: 'Montserrat', sans-serif;
+}
+form legend{
+    position: absolute;
+}
+.chicosRedondos{
+    width: 12px;
+    height: 12px;
+    border-color: #cbdfbd;
+    margin-bottom: 1.6vh;
+    margin-left: 71vh;
+}
+form select{
+    background-color: #cbdfbdec;
+    position: relative;
+    width: 250px;
+    height: 30px;
+    margin-right: 2.4vh;
+    border: groove 1px #6f754f;
+    color: #6f754f;
+    margin-top: 3.2vh;
+    margin-bottom: 4.8vh;
+    padding: 0vh 1.12vh; 
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px 10px 10px 10px;
+}
+form textarea{
+    background-color: #cbdfbdec;
+    border: groove 1px #6f754f;
+    color: #6f754f;
+    width: 515px;
+    height: 70px;
+    padding: 1.12vh 1.44vh;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 4.8vh;
+    border-radius: 10px 10px 10px 10px;
+}
+.chicosCuadrados{
+    width: 12px;
+    height: 12px;
+    border-color: #cbdfbd;
+    margin-bottom: 1.6vh;
+    margin-left: 3.2vh;
+}
+.tildar{
+    color: #6f754f;
+    display: inline-block;
+}
+.botonContenedor{
+    margin-left: 24vh;
+    margin-top: 8vh;
+    margin-bottom: 4.8vh;
+}
+.boton{
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    background-color: #f19c79;
+    color: #ffff;
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom:6vh;
+}
+.boton:hover{
+    background-color: #d4e09b;
+    color: #f19c79;
+}
+.animate__animated{
+    position: absolute;
+    right: 20vh;
+    top: 65vh;
+    width: 30vh;
+    animation-duration:3s;
+}
+
+
+@media (max-width: 768px) {
+    .logo{
+        margin-left: 5.5vh;
+        width: 80%;
+    }
+    body header nav #navbarNav ul li {
+        padding-left: 6.5vh;
+        padding-bottom: 2vh;
+    }
+    .video{
+        margin-left: 0vh;
+        width: 100%;
+    }
+    .flechaAbajo{
+        margin-left: 26vh;
+    }
+    .párrafosGrandes{
+        margin-bottom: 4vh;
+        line-height: normal;
+        padding: 0vh 3vh 0vh 3vh ;
+    }
+    .imagenesDeslizables{
+        margin-left: 0;
+        width: 100%;
+    }
+    .imagenesPrincipales{
+        margin-left: 10vh;
+        width: 60%;
+    }
+    .párrafoDeslizable{
+        display: none;
+    }
+    .titulosDeslizables{
+        margin-left: 0vh;
+        margin-top: 0vh;
+        text-align: center;
+        font-size: medium;
+        color: white;
+        width: 100%;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .mas{
+        clear: both;
+        margin-left: 0vh;
+        margin-top: 0vh;
+    }
+    .icono{
+        width: 55%;
+        padding-left: 0vh;
+        padding-right: 0vh;
+        margin-left: 3vh;
+    }
+    h4{
+        text-align: center;
+        margin-left: 0vh;
+    }
+
+    .cajaContenedora{
+        width: 100%;
+        margin-left: 0vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.1fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "párrafosGrandes2"
+        "vacio4"
+        "cajasObjetivos1"
+        "cajasObjetivos2";
+        grid-row-gap: 0px;
+    }
+    .párrafosGrandes2{
+        margin-bottom: 4vh;
+        line-height: normal;
+        padding: 2vh 3vh 2vh 3vh ;
+    }
+    .vacio4{
+        margin-top: 1vh
+    }
+    body h3{
+        margin-left: 1vh;
+    }
+    .objetivos{
+        margin-left: 1vh;
+        margin-right: 1vh;
+        width: 90%;
+    }
+    .contenedorGrilla{
+        grid-template-columns:1fr;
+        grid-template-rows: 0.3fr 0.7fr 0.1fr 0.3fr 0.5fr 0.3fr 0.3fr 0.3fr 0.5fr 0.3fr 0.3fr 0.3fr 0.5fr 0.3fr 0.3fr;
+        grid-template-areas: 
+        "imagenProyecto"
+        "bajadaProyecto" 
+        "vacio2"  
+        "producto1"
+        "imagenTabla1"
+        "listas1"
+        "residuos1"
+        "producto2" 
+        "imagenTabla2"
+        "listas2" 
+        "residuos2"
+        "producto3"
+        "imagenTabla3"
+        "listas3" 
+        "residuos3";
+        grid-row-gap: 5px;
+        grid-column-gap: none;
+    }
+    .imagenProyecto{
+        width: 50%;
+        margin-left: 5vh;
+    }
+    .bajadaProyecto{
+        justify-self: center;
+        width: 80%;
+        margin-left: 4vh;
+        font-size: 1.5rem;
+        line-height: 3vh;
+    }
+    .vacio2{
+        margin-left: 2vh;
+    }
+    .productos, .residuos, .usos, .vacio .vacio3{
+        display: none;
+    }
+    .imagenTabla1, .imagenTabla2, .imagenTabla3{
+        justify-self: center;
+        margin-left: 4vh;
+        margin-bottom: 0vh;
+        width: 100%;
+    }
+    .producto1, .producto2, .producto3{
+        width: 100%;
+        font-size: 2.5rem;
+        font-family: 'Bebas Neue', cursive;
+        justify-self: center;
+        height: 7vh;
+        padding-top: 1vh;
+        padding-left: 4vh;
+        margin-left: 4vh;
+    }
+    .listas1, .listas2, .listas3, .residuos1, .residuos2, .residuos3{
+        width: 100%;
+        font-size: 1.5rem;
+        justify-self: center;
+        padding-top: 2vh;
+        height: 90%;
+        margin: 1vh 0vh 1vh 4vh
+    }
+    .contenedorGrilla ol{
+        padding-left: 5vh;
+    }
+    .residuos1, .residuos2, .residuos3{
+        padding-bottom: 1vh;
+    }
+    .imagenTitulo{
+        margin-left: 20vh;
+        width: 40%;
+    }
+    .bajada{
+        width: 80%;
+        margin-left: 8vh;
+        font-size: 1.5rem;
+    }
+    .imagenesDeslizables2 {
+        margin-left: 0vh;
+        padding-left: 0vh;
+        width: 113%;
+    }
+    .imagenesDeslizables2 .badge{
+        top: 1vh;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .pastilleros p{
+        font-size: 1.2rem;
+    }
+    .animate__animated{
+        display: none;
+    }
+    .fraseContacto{
+        margin-left: 15vh;
+        width: 60%;
+    }
+    .form{
+        margin-left: 7vh;
+    }
+    .chicosRedondos{
+        margin-left: 40vh;
+    }
+    .botonContenedor{
+        margin-left: 15vh;
+    }
+    .boton{
+        padding-bottom: 4vh;
+    }
+}
